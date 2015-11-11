@@ -13,3 +13,7 @@ $ git reset HEAD~1
 http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 ```
 
+Delete a remote branch. (i.e. push [nothing] to : <something>)
+```
+git push origin :<branchName>
+```
