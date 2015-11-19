@@ -23,7 +23,8 @@ git push origin :<branchName>
 details of where the branch comes from;
 ```
 git remote show origin
-
+```
+```
 * remote origin
   Fetch URL: https://github.com/Snowcode/2014LaClusaz.git
   Push  URL: https://github.com/Snowcode/2014LaClusaz.git
