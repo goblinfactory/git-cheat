@@ -36,3 +36,12 @@ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (local out of date)
 ```
+
+### See 'ahead' + 'behind'
+See how many commits ahead and behind you are on a branch. (prints out {a} {b}) a=ahead, b=behind 
+```
+$ git rev-list --left-right --count master...my-branch
+```
+```
+42      58
+```
