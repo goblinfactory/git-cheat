@@ -45,3 +45,6 @@ $ git rev-list --left-right --count master...my-branch
 ```
 42      58
 ```
+### Some links I need to try out
+Storing here for emergency access <blush!>
+- http://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
