@@ -46,5 +46,6 @@ $ git rev-list --left-right --count master...my-branch
 42      58
 ```
 ### Some links I need to try out
-Storing here for emergency access <blush!>
+Storing here for emergency access
 - http://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
+- http://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/
