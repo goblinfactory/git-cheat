@@ -13,6 +13,13 @@ $ git log -1
 $ git reset HEAD~1
 ```
 
+### Undo git add for specific file
+Before a local commit.
+```
+$ git reset <file>
+```
+
+
 ### Delete a remote branch
 (i.e. push [nothing] to : [branchname] )
 ```
