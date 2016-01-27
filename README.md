@@ -58,3 +58,4 @@ Storing here for emergency access
 - https://gist.github.com/hofmannsven/6814451
 - http://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/
 - http://sethrobertson.github.io/GitFixUm/fixup.html
+- http://www.gitguys.com/topics/git-diff/
