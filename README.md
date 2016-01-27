@@ -1,6 +1,13 @@
 # git-cheat
 my personal git cheatsheet - lazy (not git pro) dev take on using git
 
+### Difference between my file and master
+See the diff between a local file in a local branch and the latest version in master. (Do `git checkout master`, `git pull`, to make sure you have latest master, then `git checkout {yourbranch}` before doing a diff. 
+```
+git diff master {path to your file}
+git diff master Utils/Demo.cs
+```
+
 ### What's in the queue 
 waiting to be pushed (what was the last commit?)
 ```
