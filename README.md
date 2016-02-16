@@ -19,6 +19,16 @@ $ git log -1
 ```
 $ git reset HEAD~1
 ```
+### Abort merge with conflicts
+How to abort a merge, if there are conflicts. (Only works if there are conflicts.)
+```
+git merge --abort
+```
+
+### Preview merge before merging
+```
+git log ...otherbranch
+```
 
 ### Undo git add for specific file
 Before a local commit.
