@@ -26,8 +26,11 @@ git merge --abort
 ```
 
 ### Preview merge before merging
+? Im not convinced, (not tested yet) but dont think either of these will show you in advance that your merge will create conflicts? 
+If that's the case then best to create a new test-branch from your current branch and do an experimental merge from master.
 ```
-git log ...otherbranch
+git log ..otherbranch  // two dots = list of changes that will be merged 
+git log ...otherbranch // three dots = diff
 ```
 
 ### Undo git add for specific file
