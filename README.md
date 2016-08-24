@@ -24,6 +24,11 @@ How to abort a merge, if there are conflicts. (Only works if there are conflicts
 ```
 git merge --abort
 ```
+### Accidentally pushed to master
+This is a contentious item, how to undo someone's push to master, discussions around editing 'history'. If your team is small, and no-one else has pushed or pulled from master or cloned, then this was the simplest hack for me;
+```
+git push origin+AB12CD34:master
+```
 
 ### Preview merge before merging
 ? Im not convinced, (not tested yet) but dont think either of these will show you in advance that your merge will create conflicts? 
