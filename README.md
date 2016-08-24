@@ -25,7 +25,7 @@ How to abort a merge, if there are conflicts. (Only works if there are conflicts
 git merge --abort
 ```
 ### Accidentally pushed to master
-This is a contentious item, how to undo someone's push to master, discussions around editing 'history'. If your team is small, and no-one else has pushed or pulled from master or cloned, then this was the simplest hack for me, where AB12CD34 is the hash of the commit immediately prior the wrong commit. This makes AB12CD34 the new head. 
+This is a contentious item, how to undo someone's push to master, discussions around editing 'history'. If your team is small, and no-one else has pushed or pulled from master or cloned, then this was the simplest hack for me, where `AB12CD34` is the hash of the commit immediately prior the wrong commit. This makes `AB12CD34` the new head. 
 ```
 git push origin+AB12CD34:master
 ```
