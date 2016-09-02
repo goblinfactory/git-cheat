@@ -14,6 +14,13 @@ waiting to be pushed (what was the last commit?)
 $ git log -1
 ```
 
+###remove untracked files
+```
+$ git clean -f -n  \\ preview (using -n) to see what would be deleted
+$ git clean -f     \\ to delete them.
+```
+sometimes if I need to undo all my changes I use `git checkout .` followed by `git clean -f -n` then `git clean -f`
+
 ### Undo last commit 
 (keep the changes) http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 ```
