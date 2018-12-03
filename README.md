@@ -1,5 +1,20 @@
 # git-cheat
-my personal git cheatsheet - lazy (not git pro) dev take on using git
+my personal git cheatsheet and favourites - lazy (not git pro) dev take on using git
+
+### pull in latest from remote origin
+
+If I have forked someone's repo and want to merge in latest changes. Recipe is `git fetch --all {my-origin-name} {remote-branch}`
+
+1. create a remote origin for the repo I forked from, for example; (hint, F7 in conemu shows command history)
+2. pull the remote branch you want to update
+3. merge in the changes
+
+```sh
+git remote add origin-proto https://github.com/AsynkronIT/protoactor-dotnet.git
+git pull origin-proto dev
+git checkout {mybranch}
+git merge dev
+```
 
 ### Difference between my file and master
 See the diff between a local file in a local branch and the latest version in master. (Do `git checkout master`, `git pull`, to make sure you have latest master, then `git checkout {yourbranch}` before doing a diff. 
