@@ -5,7 +5,9 @@ my personal git cheatsheet and favourites - lazy (not git pro) dev take on using
 
 If I am busy working on a branch and want to `git pull master` without switching branches so that I can easily merge a small change in master with `git merge master`. 
 
-> git fetch origin master:master
+```sh
+git fetch origin master:master
+```
 
 ### pull in latest from remote origin
 
