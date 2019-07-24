@@ -107,6 +107,17 @@ $ git rev-list --left-right --count master...my-branch
 ```
 42      58
 ```
+# Some non GIT cheats
+
+### wget clone website for offline
+
+Shortcut below will start at url (foo) and recurse, converting all links to relative (e.g. CSS stylesheets), adding approp extensions, and downloading CSS stylesheets and images.
+
+```
+wget -mkEpnp http://example.org
+```
+
+
 ### Some links I need to try out
 Storing here for emergency access
 - http://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
