@@ -74,6 +74,11 @@ Before a local commit.
 $ git reset <file>
 ```
 
+### Push new local branch to origin
+
+```
+git push -u origin {my-branch-name}
+```
 
 ### Delete a remote branch
 (i.e. push [nothing] to : [branchname] )
