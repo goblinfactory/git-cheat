@@ -37,7 +37,7 @@ waiting to be pushed (what was the last commit?)
 $ git log -1
 ```
 
-###remove untracked files
+### remove untracked files
 ```
 $ git clean -f -n  \\ preview (using -n) to see what would be deleted
 $ git clean -f     \\ to delete them.
@@ -67,6 +67,16 @@ If that's the case then best to create a new test-branch from your current branc
 git log ..otherbranch  // two dots = list of changes that will be merged 
 git log ...otherbranch // three dots = diff
 ```
+
+### Resolve a merge conflict using 'theirs' or 'our' file
+
+```
+git checkout --theirs PATH/FILE
+or
+git checkout --ours PATH/FILE
+```
+
+see more : https://easyengine.io/tutorials/git/git-resolve-merge-conflicts/
 
 ### Undo git add for specific file
 Before a local commit.
