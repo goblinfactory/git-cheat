@@ -1,6 +1,17 @@
 # git-cheat
 my personal git cheatsheet and favourites - lazy (not git pro) dev take on using git
 
+### refresh a forked project from upstream master
+
+For when I forked a project a long time ago, but now need to work on it. I can either delete and re-fork, or I can ...
+
+```sh
+git remote add upstream https://github.com/{github-username}/{dudes-cool-project}.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+```
+
 ### update master without switching branch
 
 If I am busy working on a branch and want to `git pull master` without switching branches so that I can easily merge a small change in master with `git merge master`. 
