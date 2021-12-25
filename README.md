@@ -1,4 +1,17 @@
-# git-cheat
+# github CLI (GH) cheats
+
+Some quick cheatnotes for using GH. ()
+
+### Creating a new private repo from an existing folder 
+
+Assume you're starting from inside the folder in queestion. Leave out the flag and it will be public by default: https://cli.github.com/manual/gh_repo_create
+
+```sh
+GH repo create --push --private
+```
+
+# git-cheats
+
 my personal git cheatsheet and favourites - lazy (not git pro) dev take on using git
 
 ### refresh a forked project from upstream master
