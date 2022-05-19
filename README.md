@@ -19,6 +19,20 @@ my personal git cheatsheet and favourites - lazy (not git pro) dev take on using
 
 Useful for when you start working on a feature and realise you forgot to start a feature branch. lol! 😂
 
+**No conflicts**
+
+For when you don't have any conflicts.
+
+```sh
+git switch -c feature/my-new-feature
+```
+
+**Conflicts, resolving using `MINE` (from stash)**
+
+If there are conflicts and you need to apply your changes from stash OVER any other changes, resolving conflicts using `MINE`.
+
+If in doubt, use git switch, otherwise use recipe below, and dont forget to do a git diff to compare your changes to develop. Assumption is we've only been working for a short while `off reservation`, so there's not a huge amount of changes. 
+
 ```sh
 git stash --include-untracked  
 git checkout develop
