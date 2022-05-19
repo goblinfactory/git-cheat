@@ -17,7 +17,7 @@ my personal git cheatsheet and favourites - lazy (not git pro) dev take on using
 
 ### Stashing properly
 
-Useful for when you start working on a feature and realise you forgot to start a feature branch. lol!
+Useful for when you start working on a feature and realise you forgot to start a feature branch. lol! 😂
 
 ```sh
 git stash --include-untracked  
