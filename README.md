@@ -2,6 +2,7 @@
 
 Some quick cheatnotes for using GH. ()
 
+
 ### Creating a new private repo from an existing folder 
 
 Assume you're starting from inside the folder in queestion. Leave out the flag and it will be public by default: https://cli.github.com/manual/gh_repo_create
@@ -14,7 +15,19 @@ GH repo create --push --private
 
 my personal git cheatsheet and favourites - lazy (not git pro) dev take on using git
 
-### refresh a forked project from upstream master
+### Stashing properly
+
+Useful for when you start working on a feature and realise you forgot to start a feature branch. lol!
+
+```sh
+git stash --include-untracked  
+git checkout develop
+git pull
+git checkout -b feature/feature-i-forgot-to-start
+git checkout stash -- .
+```
+
+### Refresh a forked project from upstream master
 
 For when I forked a project a long time ago, but now need to work on it. I can either delete and re-fork, or I can ...
 
@@ -25,7 +38,7 @@ git checkout master
 git merge upstream/master
 ```
 
-### update master without switching branch
+### Update master without switching branch
 
 If I am busy working on a branch and want to `git pull master` without switching branches so that I can easily merge a small change in master with `git merge master`. 
 
@@ -33,7 +46,7 @@ If I am busy working on a branch and want to `git pull master` without switching
 git fetch origin master:master
 ```
 
-### pull in latest from remote origin
+### Pull in latest from remote origin
 
 If I have forked someone's repo and want to merge in latest changes. Recipe is `git fetch --all {my-origin-name} {remote-branch}`
 
