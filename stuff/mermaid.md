@@ -34,3 +34,67 @@ graph TB
     end
 ```
 
+<style>.mermaid svg { height: auto; }</style>
+
+```mermaid
+%%{ init: { "flowchart": { "useMaxWidth": true } }}%%
+flowchart TB
+classDef borderless stroke-width:0px
+classDef darkBlue fill:#00008B, color:#fff
+classDef brightBlue fill:#6082B6, color:#fff
+classDef gray fill:#62524F, color:#fff
+classDef gray2 fill:#4F625B, color:#fff
+
+subgraph ExternalSystem[ ]
+    A1[[Public User<br/> Via REST API]]
+    B1[Backend Services/<br/>frontend services]
+end
+class ExternalSystem,A1 gray
+
+subgraph SupportTeam[ ]
+    A2[[Authorized User<br/> Via REST API]]
+    B2[Backend Services/<br/>frontend services]
+end
+class SupportTeam,A2 darkBlue
+
+subgraph booksSystem[ ]
+    A3[[Books System]]
+    B3[Allows interacting with book records]
+end
+class booksSystem,A3 brightBlue
+
+
+ExternalSystem--Reads records using-->booksSystem
+SupportTeam--Reads and writes records using-->booksSystem
+
+subgraph authorizationSystem[ ]
+    A4[[Authorization System]]
+    B4[Authorizes access to resources]
+end
+
+subgraph publisher1System[ ]
+    A5[[Publisher 1 System]]
+    B5[Gives details about books publshed by them]
+end
+subgraph publisher2System[ ]
+    A6[[Publisher 2 System]]
+    B6[Gives details about books publshed by them]
+end
+class authorizationSystem,A4,publisher1System,A5,publisher2System,A6 gray2
+
+booksSystem--Accesses authorization details using-->authorizationSystem
+booksSystem--Accesses publisher details using-->publisher1System
+booksSystem--Accesses publisher details using-->publisher2System
+
+class A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6 borderless
+
+click A3 "/csymapp/mermaid-c4-model/blob/master/containerDiagram.md" "booksSystem"
+```
+
+
+<div style='width:130px'>
+Legend
+<div style='background-color:#00008B;color:white'>Support team</div>
+<div style='background-color:#555555;color:white'>External system</div>
+<div style='background-color:#DD0044;color:white'>Sitecore</div>
+</div>
