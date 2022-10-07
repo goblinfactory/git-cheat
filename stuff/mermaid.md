@@ -1,5 +1,7 @@
 # C4 diagram using mermaid
 
+<style>.mermaid svg { height: auto; }</style>
+
 extrtact from discussions here : https://github.com/mermaid-js/mermaid/issues/1276
 
 ```text
@@ -34,7 +36,6 @@ graph TB
     end
 ```
 
-<style>.mermaid svg { height: auto; }</style>
 
 ```mermaid
 %%{ init: { "flowchart": { "useMaxWidth": true } }}%%
