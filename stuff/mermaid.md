@@ -1,7 +1,5 @@
 # C4 diagram using mermaid
 
-<style>.mermaid svg { height: auto; }</style>
-
 extrtact from discussions here : https://github.com/mermaid-js/mermaid/issues/1276
 
 ```text
@@ -91,11 +89,3 @@ class A1,A2,A3,A4,A5,A6,B1,B2,B3,B4,B5,B6 borderless
 
 click A3 "/csymapp/mermaid-c4-model/blob/master/containerDiagram.md" "booksSystem"
 ```
-
-
-<div style='width:130px'>
-Legend
-<div style='background-color:#00008B;color:white'>Support team</div>
-<div style='background-color:#555555;color:white'>External system</div>
-<div style='background-color:#DD0044;color:white'>Sitecore</div>
-</div>
