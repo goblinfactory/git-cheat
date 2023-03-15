@@ -13,6 +13,8 @@ GH repo create --push --private
 
 ### Push current code or starter project to new empty repo
 
+If you / I have GH cli installed then **use GH approach above**, which does not require you first create the repo. Otherwise if you prefer to manually create the repo first in github then use the steps below.
+
 ```sh
 git remote add origin https://github.com/<your-gh-username>/<repository-name>
 git branch -M main
