@@ -11,7 +11,7 @@ Assume you're starting from inside the folder in queestion. Leave out the flag a
 GH repo create --push --private
 ```
 
-### Push current code or starter project to mew empty repo
+### Push current code or starter project to new empty repo
 
 ```sh
 git remote add origin https://github.com/<your-gh-username>/<repository-name>
